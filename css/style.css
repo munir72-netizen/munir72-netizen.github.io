@@ -1,0 +1,163 @@
+/* ================== CARD ================== */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Biar gambar dalam card tidak mepet */
+.card-img-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-custom {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ================== SKILL BOX ================== */
+.skill-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.skill-box img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* ================== TEXT ================== */
+.skill-text {
+  font-weight: 600;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.skill-text span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* ================== SKILL DETAIL ================== */
+.skill-detail {
+  display: none; /* hidden default */
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%; /* fleksibel */
+  max-width: 240px; /* tapi dibatasi */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+}
+
+.skill-item:hover .skill-detail {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animasi muncul */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 576px) {
+  .skill-detail {
+    width: 90%; /* biar pas di layar HP */
+    max-width: none;
+  }
+  .skill-box {
+    width: 80px;
+    height: 80px;
+  }
+  .skill-text span {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================== gambar biri di jumbotron bawah ================== */
+.waveJumbo {
+  display: block;
+  width: 100%;
+  transform: rotate(180deg); /* putar 180 derajat */
+}
+
+/* ================== setting icon ================== */
+
+.sosmed-icon {
+  width: 100px;
+  transition: all 0.3s ease;
+  filter: grayscale(100%); /* Default abu-abu */
+  cursor: pointer;
+}
+
+.sosmed-icon:hover {
+  filter: grayscale(0%); /* Warna asli muncul */
+  transform: scale(1.2); /* Popup membesar */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  border-radius: 12px; /* opsional biar lebih smooth */
+}
+
+/* ================== animasi menu ================== */
+
+/* Styling link navbar */
+.navbar-nav .nav-link {
+  position: relative;
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover warna teks */
+.navbar-nav .nav-link:hover {
+  color: #ffdd00 !important; /* kuning saat hover */
+}
+
+/* Animasi underline */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ffdd00;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}

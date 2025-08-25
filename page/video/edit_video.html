@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projek Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <!-- Google Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg shadow text-white"
+      style="background-color: #0099ff"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kemampuan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sosial Media</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Projek Section -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <h1 class="text-center mb-5">PROJEK</h1>
+
+        <!-- Card YouTube -->
+        <div class="card mb-4 shadow rounded-3 overflow-hidden px-2 py-2">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="ratio ratio-16x9 h-100">
+                <iframe
+                  src="https://www.youtube.com/embed/NFNQxHv5NV8"
+                  title="YouTube video"
+                  allowfullscreen
+                  class="rounded-start"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card-body">
+                <h3 class="card-title">Projek YouTube</h3>
+                <p class="card-text">
+                  Proyek ini menampilkan video dari YouTube yang berisi tutorial
+                  atau dokumentasi proses pengerjaan projek.
+                </p>
+                <button class="btn btn-outline-primary">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card TikTok -->
+        <div class="card mb-4 shadow rounded-3 overflow-hidden px-2 py-2">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@myunir.404/video/7524371482408013063"
+                data-video-id="7524371482408013063"
+                style="max-width: 100%; margin: auto"
+              >
+                <section></section>
+              </blockquote>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">Projek TikTok</h3>
+                <p class="card-text">
+                  Video singkat dari TikTok untuk memperlihatkan hasil proyek
+                  dengan cara yang lebih kreatif dan cepat.
+                </p>
+                <button class="btn btn-outline-primary">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Instagram -->
+        <div class="card mb-4 shadow rounded-3 overflow-hidden">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/C7vHcS3Oe1Z/"
+                data-instgrm-version="14"
+                style="margin: auto; width: 100%"
+              ></blockquote>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">Projek Instagram</h3>
+                <p class="card-text">
+                  Postingan Instagram berisi dokumentasi dan desain visual
+                  menarik terkait projek ini.
+                </p>
+                <button class="btn btn-outline-primary">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Facebook -->
+        <div class="card mb-4 shadow rounded-3 overflow-hidden">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div
+                class="fb-video"
+                data-href="https://www.facebook.com/facebook/videos/10153231379946729/"
+                data-width="100%"
+                data-allowfullscreen="true"
+              ></div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">Projek Facebook</h3>
+                <p class="card-text">
+                  Video Facebook ini menampilkan presentasi dari projek secara
+                  lebih detail untuk audiens sosial media.
+                </p>
+                <button class="btn btn-outline-primary">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TikTok Script -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <!-- Instagram Script -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <!-- Facebook Script -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
